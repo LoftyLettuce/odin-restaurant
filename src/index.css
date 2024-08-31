@@ -1,0 +1,43 @@
+/* reset */
+*
+{
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+body
+{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f7fee7;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 20fr;
+  grid-template-areas: 
+  "pic1 nav pic2"
+  "pic1 content pic2";
+}
+body header
+{
+  background-color: #1a2e05;
+  grid-area: nav;
+}
+header nav
+{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+header button
+{
+  height: 3rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #4d7c0f;
+  color: #f7fee7;
+}
+body #content
+{
+  grid-area: content;
+}

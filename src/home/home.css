@@ -1,0 +1,36 @@
+header #home
+{
+  background-color: #bef264;
+  color: #1a2e05;
+  border: none;
+  border-radius: 10px 10px 0 0;
+}
+body #content
+{
+  background-color: #bef264;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#content h1
+{
+  border: 10px solid black;
+  padding: 5%;
+  font-size: 4rem;
+  background-color: #d9f99d;
+  color: black;
+  border-style: groove;
+}
+#content div:nth-child(2n)
+{
+  font-size: 2rem;
+}
+#content::before
+{
+  position: absolute;
+  content: "*Everything here is fictional:(";
+  font-size: 0.8rem;
+  bottom: 0px;
+}
