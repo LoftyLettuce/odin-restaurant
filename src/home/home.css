@@ -1,11 +1,11 @@
-header #home
+nav #home[status="active"]
 {
   background-color: #bef264;
   color: #1a2e05;
   border: none;
   border-radius: 10px 10px 0 0;
 }
-body #content
+body .home
 {
   background-color: #bef264;
   position: relative;
@@ -14,7 +14,7 @@ body #content
   justify-content: space-around;
   align-items: center;
 }
-#content h1
+.home h1
 {
   border: 10px solid black;
   padding: 5%;
@@ -23,11 +23,11 @@ body #content
   color: black;
   border-style: groove;
 }
-#content div:nth-child(2n)
+.home div:nth-child(2n)
 {
   font-size: 2rem;
 }
-#content::before
+.home::before
 {
   position: absolute;
   content: "*Everything here is fictional:(";
