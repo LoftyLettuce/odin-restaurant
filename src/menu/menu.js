@@ -36,4 +36,5 @@ export function makeMenu(doc){
               content,
               doc);
   p.innerHTML = "This one somehow remind me of the first one. Red, blue and golden. Flan from <a href='https://natashaskitchen.com/flan-recipe/'>natashaskitchen</a>."
+  doc.querySelector("a").setAttribute("target", "_blank");
 }

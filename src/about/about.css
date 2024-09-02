@@ -1,18 +1,13 @@
-:root
-{ 
-  ---background-color: #fda4af;
-  ---button-color: #fda4af;
-}
 nav #about[status="active"]
 {
-  background-color: var(---button-color);
+  background-color: #fda4af;
   border-bottom: none;
 }
 .about
 {
   padding: 2%;
   font-size: 4vh;
-  background-color: var(---background-color);
+  background-color: #fda4af;
   display: flex;
   flex-direction: column;
   justify-content: center;

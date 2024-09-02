@@ -1,9 +1,9 @@
 import "./index.css"
-import "./menu/menu.css"
 import { makeHome } from "./home/home"
 import { makeMenu } from "./menu/menu";
+import { makeAbout } from "./about/about";
 document.getElementById("home").getAttribute
-function reset(doc, button)
+function reset(doc)
 {
   Array.from(doc.querySelector("nav").children).forEach(button => {
     if (button.getAttribute("status") == "active")
@@ -17,15 +17,16 @@ function reset(doc, button)
 }
 document.addEventListener("DOMContentLoaded", function(){
   makeHome(this);
-  this.getElementById("home").addEventListener("click", function(e){
-    reset(document, e.target);
+  this.getElementById("home").addEventListener("click", function(){
+    reset(document);
     makeHome(document);
   })
-  this.getElementById("menu").addEventListener("click", function(e){
-    reset(document, e.target);
+  this.getElementById("menu").addEventListener("click", function(){
+    reset(document);
     makeMenu(document);
   })
-  this.getElementById("about").addEventListener("click", function(e){
-    
+  this.getElementById("about").addEventListener("click", function(){
+    reset(document);
+    makeAbout(document);
   })
 })
